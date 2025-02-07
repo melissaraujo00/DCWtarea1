@@ -4,33 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logochurrasco.png" type="image/x-icon">
     <title>Churrasco Restaurante</title>
 </head>
 
 <body>
     <!--Estudiante1 heaader y nav-->
+    <!--Colocamos la imagen y el nombre de la empresa ajustamos el tamaño de la imagen para que se mire mejor-->
+    <!--Menú de navegacion referencia a la misma pagina-->
     <header>
-        <!--Colocamos la imagen y el nombre de la empresa ajustamos el tamaño de la imagen para que se mire mejor-->
-        <img src="./img/logochurrasco.png" alt="logochurrasco" width="150px">
-        <h1>Churrasco Restaurante</h1>
-        <nav>
-            <!--Menú de navegacion referencia a la misma pagina-->
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Menú</a></li>
-                <li><a href="">Reservar</a></li>
-                <li><a href="">Contactos</a></li>
-                <li><a href="">Eventos</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <img src="./img/logochurrasco.png" alt="logochurrasco" width="150px">
+            <h1>Churrasco Restaurante</h1>
+            <nav class="navabar container">
+                <ul class="menu">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="">Menú</a></li>
+                    <li><a href="#Reservar">Reservar</a></li>
+                    <li><a href="#Contactos">Contactos</a></li>
+                    <li><a href="">Eventos</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    
 
     <!--  estudiante2 main  -->
     <main>
+    
         <!--  seccion para la descripcion del restaurante -->
-        <section>
-            <h2>Sabor,frescura y momentos inolvidables</h2>
-            <p>Ubicado en San Matías, distrito de Ciudad Barrios, El Churrasco es el lugar perfecto para una experiencia
+        <section class="description">
+            <div class="container-description">
+                <h2>Sabor,frescura y momentos inolvidables</h2>
+                <p>Ubicado en San Matías, distrito de Ciudad Barrios, El Churrasco es el lugar perfecto para una experiencia
                 gastronómica inigualable. Ofrecemos una amplia variedad de opciones para todos los gustos, desde comidas
                 tradicionales hasta opciones saludables y un menú especial para los más pequeños.
                 <br>
@@ -38,24 +44,26 @@
                 con amigos. La combinación de un excelente servicio y un ambiente cálido hará que cada visita sea
                 especial. ¡Ven a disfrutar de momentos inolvidables en El Churrasco!
             </p>
+            </div>
         </section>
         <!-- seccion para la galeria de imagenes -->
         <section>
             <h3>algunos de nuestros platillos</h3>
             <!-- div que contiene la galeria de imagenes, el div tiene la propiedad display grid para mostrar una cuadricula -->
             <div class="galery" style="display: grid; grid-template-columns: repeat(3,1fr);">
-                <img src="./img/platillo1.jpg" alt="img1" style="width: 200px;">
-                <img src="./img/platillo2.jpg" alt="img2" style="width: 200px;">
-                <img src="./img/platillo3.jpg" alt="img3" style="width: 200px;">
-                <img src="./img/platillo4.jpg" alt="img4" style="width: 200px;">
-                <img src="./img/platillo5.jpg" alt="img4" style="width: 200px;">
-                <img src="./img/platillo6.jpg" alt="img4" style="width: 200px;">
+                <div class="box"><img src="./img/platillo1.jpg" alt="img1" style="width: 200px;"></div>
+                <div class="box"><img src="./img/platillo2.jpg" alt="img2" style="width: 200px;"></div>
+                <div class="box"><img src="./img/platillo3.jpg" alt="img3" style="width: 200px;"></div>
+                <div class="box"><img src="./img/platillo4.jpg" alt="img4" style="width: 200px;"></div>
+                <div class="box"><img src="./img/platillo5.jpg" alt="img4" style="width: 200px;"></div>
+                <div class="box"><img src="./img/platillo6.jpg" alt="img4" style="width: 200px;"></div>
             </div>
         </section>
         <br>
         <!-- seccion para el formulario  -->
         <section>
-            <div class="form">
+            <div class="form" id="Reservar">
+                <h2>¡Reserva Aqui!</h2>
                 <label for="nombre">nombre: <input type="text"></label>
                 <br>
                 <label for="fecha">fecha: <input type="date"></label>
@@ -69,85 +77,67 @@
 
         </section>
     </main>
+     <!--  estudiante3 main  -->
     <aside>
-        <!-- Seccion para eventos especiales y promociones -->
         <h1>2025</h1>
-    
-        <section>
+        <!-- Seccion para eventos especiales y promociones -->
+        <div class="events-container">
             <h3><strong>Eventos Próximos</strong></h3>
-            <ul style="list-style: none;">
-                <li>
-                    <strong><time datetime="2025-02-10">10 de febrero</time></strong>
+            <ul>
+                <li><strong><time datetime="2025-02-10">10 de febrero</time></strong>
                     <p>Noche de música en vivo con artistas locales</p>
                 </li>
-                <li>
-                    <strong><time datetime="2025-02-14">14 de febrero</time></strong>
+                <li><strong><time datetime="2025-02-14">14 de febrero</time></strong>
                     <p>Cena especial de San Valentín con menú exclusivo</p>
-                </li>
-            </ul>
-        </section>
-    
-        <section>
-            <h3>Ofertas Especiales</h3>
-            <ul style="list-style: none;">
-                <li>
-                    <strong>Lunes y martes</strong>
-                    <p>10% de descuento en todos los platillos saludables</p>
-                </li>
-                <li>
-                    <strong>Miércoles</strong>
-                    <p>¡Menú infantil gratis con la compra de un plato fuerte!</p>
-                </li>
-                <li>
-                    <strong>Viernes</strong>
-                    <p>2x1 en bebidas seleccionadas de 6:00 pm a 9:00 pm</p>
-                </li>
-            </ul>
-        </section>
-    </aside>
-    
-    <footer>
-        <div>
-            <!-- div para la ubicacion o dirección del restaurante  -->
-            <ul style="list-style: none; padding: 0;">
-                <li>
-                    <strong>Dirección:</strong><br>
-                    <p>Cantón San Matías, Distrito de Ciudad Barrios, San Miguel Norte</p>
-                </li>
-                <li>
-                    <strong>Teléfono:</strong><br>
-                    <p>+503 7956 5203</p>
-                </li>
-                <li>
-                    <strong>Correo electrónico:</strong><br>
-                    <p>elchurrascosv@outlook.com</p>
-                </li>
-                <li>
-                    <!-- iframe que muestra el mapa del restaurante  -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2554.881591459489!2d-88.17742127843961!3d13.485015202478088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7b2bf908359f43%3A0xfca38df9da28dedb!2sEl%20churrasco!5e0!3m2!1ses!2ssv!4v1738785627912!5m2!1ses!2ssv"
-                        width="400" height="300" style="border:0;" allowfullscreen loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
                 </li>
             </ul>
         </div>
     
-        <div>
-            <!-- div del footer que muestra las redes sociales -->
+        <div class="offers-container">
+            <h3>Ofertas Especiales</h3>
+            <ul>
+                <li><strong>Lunes y martes:</strong> 10% de descuento en todos los platillos saludables</li>
+                <li><strong>Miércoles:</strong> ¡Menú infantil gratis con la compra de un plato fuerte!</li>
+                <li><strong>Viernes:</strong> 2x1 en bebidas seleccionadas de 6:00 pm a 9:00 pm</li>
+            </ul>
+        </div>
+    </aside>
+    <footer>
+        <!-- div para la ubicacion o dirección del restaurante  -->
+        <div class="footer-info">
+            <ul style="list-style: none; padding: 0;">
+                <li><strong>Dirección:</strong><br>
+                    <p>Cantón San Matías, Distrito de Ciudad Barrios, San Miguel Norte</p>
+                </li>
+                <li><strong>Teléfono:</strong><br>
+                    <p>+503 7956 5203</p>
+                </li>
+                <li><strong>Correo electrónico:</strong><br>
+                    <p>elchurrascosv@outlook.com</p>
+                </li>
+            </ul>
+            <div class="footer-info iframe">
+                <!-- iframe que muestra el mapa del restaurante  -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30998.35482681424!2d-88.29983382568355!3d13.791267100000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f64db001f8596fb%3A0x53f539e7e88bea84!2sEl%20Churrasco!5e0!3m2!1ses-419!2ssv!4v1738968992720!5m2!1ses-419!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+        <!-- div del footer que muestra las redes sociales -->
+        <div class="footer-social" id="Contactos">
             <strong>Síguenos en nuestras redes sociales:</strong>
             <a href="https://www.facebook.com/people/El-Churrasco/61554004262366/?_rdr">
-                <img src="img/facebook.png" alt="Facebook" width="25">
+                <img src="img/facebook.png" alt="Facebook" width="25" >
             </a>
             <a href="https://wa.me/50379565203">
                 <img src="img/whatsapp.png" alt="WhatsApp" width="25">
             </a>
         </div>
     
-        <div>
+        <div class="footer-copy">
             <p><small>Copyright 2025 El Churrasco Restaurante - All rights reserved</small></p>
         </div>
     </footer>
+        
 </body>
 
 </html>
