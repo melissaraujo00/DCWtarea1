@@ -19,10 +19,10 @@
             <nav class="navabar container">
                 <ul class="menu">
                     <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="">Menú</a></li>
+                    <li><a href="#galery">Menú</a></li>
                     <li><a href="#Reservar">Reservar</a></li>
                     <li><a href="#Contactos">Contactos</a></li>
-                    <li><a href="">Eventos</a></li>
+                    <li><a href="#events">Eventos</a></li>
                 </ul>
             </nav>
         </div>
@@ -50,7 +50,7 @@
         <section>
             <h3>algunos de nuestros platillos</h3>
             <!-- div que contiene la galeria de imagenes, el div tiene la propiedad display grid para mostrar una cuadricula -->
-            <div class="galery" style="display: grid; grid-template-columns: repeat(3,1fr);">
+            <div id="galery" style="display: grid; grid-template-columns: repeat(3,1fr);">
                 <div class="box"><img src="./img/platillo1.jpg" alt="img1" style="width: 200px;"></div>
                 <div class="box"><img src="./img/platillo2.jpg" alt="img2" style="width: 200px;"></div>
                 <div class="box"><img src="./img/platillo3.jpg" alt="img3" style="width: 200px;"></div>
@@ -81,7 +81,7 @@
     <aside>
         <h1>2025</h1>
         <!-- Seccion para eventos especiales y promociones -->
-        <div class="events-container">
+        <div class="events-container" id="events">
             <h3><strong>Eventos Próximos</strong></h3>
             <ul>
                 <li><strong><time datetime="2025-02-10">10 de febrero</time></strong>
