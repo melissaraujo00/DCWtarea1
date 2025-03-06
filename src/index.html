@@ -7,9 +7,10 @@
     <link rel="shortcut icon" href="/img/logochurrasco.png" type="image/x-icon">
     <link href="./output.css" rel="stylesheet">
     <title>Churrasco Restaurante</title>
+    <link rel="./input.css" href="style.css">
 </head>
 
-<body>
+<body class="min-w-[400px] max-w-auto">
     <!--Estudiante1 heaader y nav-->
     <!--Colocamos la imagen y el nombre de la empresa ajustamos el tamaño de la imagen para que se mire mejor-->
     <!--Menú de navegacion referencia a la misma pagina-->
@@ -32,85 +33,154 @@
             </div>
         </div>
     </header>
-    
-    
-    
 
     <!--  estudiante2 main  -->
     <main>
-    
-        <!--  seccion para la descripcion del restaurante -->
-        <section class="description">
-            <div class="container-description">
-                <h2>Sabor,frescura y momentos inolvidables</h2>
-                <p>Ubicado en San Matías, distrito de Ciudad Barrios, El Churrasco es el lugar perfecto para una experiencia
-                gastronómica inigualable. Ofrecemos una amplia variedad de opciones para todos los gustos, desde comidas
-                tradicionales hasta opciones saludables y un menú especial para los más pequeños.
-                <br>
-                Nuestro espacio es fresco, acogedor y rodeado de un ambiente hermoso, ideal para compartir en familia o
-                con amigos. La combinación de un excelente servicio y un ambiente cálido hará que cada visita sea
-                especial. ¡Ven a disfrutar de momentos inolvidables en El Churrasco!
-            </p>
-            </div>
-        </section>
-        <!-- seccion para la galeria de imagenes -->
-        <section>
-            <h3>algunos de nuestros platillos</h3>
-            <!-- div que contiene la galeria de imagenes, el div tiene la propiedad display grid para mostrar una cuadricula -->
-            <div id="galery" style="display: grid; grid-template-columns: repeat(3,1fr);">
-                <div class="box"><img src="/img/platillo1.jpg" alt="img1" style="width: 200px;"></div>
-                <div class="box"><img src="/img/platillo2.jpg" alt="img2" style="width: 200px;"></div>
-                <div class="box"><img src="/img/platillo3.jpg" alt="img3" style="width: 200px;"></div>
-                <div class="box"><img src="/img/platillo4.jpg" alt="img4" style="width: 200px;"></div>
-                <div class="box"><img src="/img/platillo5.jpg" alt="img4" style="width: 200px;"></div>
-                <div class="box"><img src="/img/platillo6.jpg" alt="img4" style="width: 200px;"></div>
-            </div>
-        </section>
-        <br>
-        <!-- seccion para el formulario  -->
-        <section>
-            <div class="form" id="Reservar">
-                <form action="post">
-                    <h2>¡Reserva Aqui!</h2>
-                    <label for="nombre">nombre: <input type="text"></label>
-                    <br>
-                    <label for="fecha">fecha: <input type="date"></label>
-                    <br>
-                    <label for="hora">hora: <input type="time"></label>
-                    <br>
-                    <label for="persona">numero de personas: <input type="number"></label>
-                    <br>
-                    <button>enviar</button>
-                </form>
-            </div>
 
+        <section class="relative w-full h-auto border  border-gray-300  shadow-md">
+            <div class="relative w-full h-auto">
+                <div class="absolute inset-0 bg-gray-950/65"></div>
+                <img src="./../img/imagenNegocio.jpeg" alt="" class="w-full h-[270px] md:h-[370px] lg:h-[399px] object-cover">
+            </div>
+            
+            <!-- Contenedor principal con mejor control de espaciado y ancho -->
+            <div class="absolute inset-0 p-2 sm:p-2 md:p-5 flex flex-col justify-start overflow-hidden">
+                <div class=" p-1 rounded-md w-fit max-w-[70%] sm:max-w-md">
+                    <h2 class="text-xl sm:text-2xl md:text-3xl  font-serif break-words text-white font-bold">
+                        "Sabor, frescura y momentos inolvidables"
+                    </h2>
+                </div>
+                
+                <!-- Texto con divs independientes para mejor control de flujo y tamaño -->
+                <div class=" mt-1 md:mt-4 lg:mt-6 lg:w-[80%] " >
+                    <!-- Contenedor con scroll opcional para texto extenso -->
+                    <div class="text-xs md:text-xl font-serif text-white  ">
+                        <p class="break-words">
+                            Ubicado en San Matías, distrito de Ciudad Barrios, El Churrasco es el lugar perfecto para una experiencia gastronómica inigualable. 
+                            Ofrecemos una amplia variedad de opciones para todos los gustos, desde comidas tradicionales hasta opciones saludables y un menú especial para los más pequeños.
+                            <br><br>
+                            Nuestro espacio es fresco, acogedor y rodeado de un ambiente hermoso, ideal para compartir en familia o con amigos. 
+                            La combinación de un excelente servicio y un ambiente cálido hará que cada visita sea especial. 
+                            ¡Ven a disfrutar de momentos inolvidables en El Churrasco!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- seccion para la galeria de imagenes -->
+        <section class="my-2 px-2">
+            <h3 class="text-2xl font-bold md:text-4xl p-2 my-2 text-center font-serif">Algunos de nuestros platillos</h3>
+            
+            <!-- Contenedor con desplazamiento horizontal y snap -->
+            <div id="galery" class="flex flex-row gap-5 overflow-x-auto snap-x ">
+                <div class="snap-center flex-shrink-0  hover:scale-101 mb-3">
+                    <div class="w-[200px] h-[200px] md:w-[350px] md:h-[350px] border-1 border-gray-400 rounded-2xl">
+                        <img src="/img/platillo1.jpg" alt="img1" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <h4 class="font-bold py-2 my-1 text-center border rounded-xl bg-gray-900 text-white">mexicano mixto</h4>
+                </div>
+                <div class="snap-center flex-shrink-0  hover:scale-101 mb-3">
+                    <div class="w-[200px] h-[200px] md:w-[350px] md:h-[350px] border-1 border-gray-400 rounded-2xl">
+                        <img src="/img/platillo2.jpg" alt="img2" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <h4 class="font-bold py-2 my-1 text-center border rounded-xl bg-gray-900 text-white">burrito</h4>
+                </div>
+                <div class="snap-center flex-shrink-0  hover:scale-101 mb-3">
+                    <div class="w-[200px] h-[200px] md:w-[350px] md:h-[350px] border-1 border-gray-400 rounded-2xl">
+                        <img src="/img/platillo3.jpg" alt="img3" class="w-full h-full object-cover rounded-2xl ">
+                    </div>
+                    <h4 class="font-bold py-2 my-1 text-center border rounded-xl bg-gray-900 text-white">tacos de pollito</h4>
+                </div>
+                <div class="snap-center flex-shrink-0  hover:scale-101 mb-3">
+                    <div class="w-[200px] h-[200px] md:w-[350px] md:h-[350px] border-1 border-gray-400 rounded-2xl">
+                        <img src="/img/chaomin.jpg" alt="img4" class=" w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <h4 class="font-bold py-2 my-1 text-center border rounded-xl bg-gray-900 text-white">chaomin</h4>
+                </div>
+                <div class="snap-center flex-shrink-0  hover:scale-101 mb-3">
+                    <div class="w-[200px] h-[200px] md:w-[350px] md:h-[350px] border-1 border-gray-400 rounded-2xl">
+                        <img src="/img/salteado.jpg" alt="img5" class=" w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <h4 class="font-bold py-2 my-1 text-center border rounded-xl bg-gray-900 text-white">salteado de verduras</h4>
+                </div>
+                <div class="snap-center flex-shrink-0  hover:scale-101 mb-3">
+                    <div class="w-[200px] h-[200px] md:w-[350px] md:h-[350px] border-1 border-gray-400 rounded-2xl">
+                        <img src="/img/platillo6.jpg" alt="img6" class="w-full h-full object-cover rounded-2xl">
+                    </div>
+                    <h4 class="font-bold py-2 my-1 text-center border rounded-xl bg-gray-900 text-white">torta cubana</h4>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- seccion para el formulario  -->
+        <section class="h-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8 p-2">
+            <!-- Columna del formulario con altura ajustable -->
+            <div class="relative col-span-1 overflow-hidden min-h-[450px] sm:min-h-[700px] md:min-h-0 md:h-auto border rounded-2xl border-gray-100" id="Reservar">
+                <!-- fondito para que la imagen no sea vea distorsionada -->
+                <div class="absolute inset-0 bg-black/30"></div>
+                <img src="https://th.bing.com/th/id/OIP.1Dz298VaNrjT8u7NcRAoAAHaFj?w=626&h=470&rs=1&pid=ImgDetMain" alt="" class="w-full h-full object-cover">
+                
+                <!-- div para Formulario  -->
+                 <div class="absolute top-0 left-0 w-full h-auto">
+|
+                     <form action="post" class=" flex flex-col items-left p-4 sm:p-2 md:text-lg font-bold rounded-md  max-w-md mx-auto text-white">
+                         <h2 class="text-center mb-3 text-xl sm:text-2xl">¡Reserva Aquí!</h2>
+                        
+                         <label for="nombre" class="block mb-1">Nombre:
+                             <input type="text" id="nombre" name="nombre" class="w-full p-1 sm:p-2 border bg-white border-gray-300 rounded-md mb-2 sm:mb-3 text-black font-normal">
+                         </label>
+                         
+                         <label for="fecha" class="block mb-1">Fecha:
+                             <input type="date" id="fecha" name="fecha" class="w-full p-1 sm:p-2 border bg-white border-gray-300 rounded-md mb-2 sm:mb-3 text-black font-normal">
+                         </label>
+                         
+                         <label for="hora" class="block mb-1">Hora:
+                             <input type="time" id="hora" name="hora" class="w-full p-1 sm:p-2 border bg-white border-gray-300 rounded-md mb-2 sm:mb-3 text-black font-normal">
+                         </label>
+                         
+                         <label for="persona" class="block mb-1">Número de personas:
+                             <input type="number" id="persona" name="persona" class="w-full p-1 sm:p-2 border bg-white border-gray-300 rounded-md mb-2 sm:mb-3 text-black font-normal">
+                         </label>
+                         
+                         <button type="submit" class="w-full py-2 bg-amber-500 text-white rounded-md mt-2 sm:mt-3 hover:bg-amber-400 transition duration-300">Enviar</button>
+                     </form>
+                 </div>
+            </div>
+        
+            <!-- Segunda columna - Eventos y ofertas -->
+
+             <!--  estudiante3 aside -->
+            <aside>
+                <h2>Febrero</h2>
+                <!-- Seccion para eventos especiales y promociones -->
+                <div class="events-container" id="events">
+                    <h3><strong>Eventos Próximos</strong></h3>
+                    <ul>
+                        <li><strong><time datetime="2025-02-10">10 de febrero</time></strong>
+                            <p>Noche de música en vivo con artistas locales</p>
+                        </li>
+                        <li><strong><time datetime="2025-02-14">14 de febrero</time></strong>
+                            <p>Cena especial de San Valentín con menú exclusivo</p>
+                        </li>
+                    </ul>
+                </div>
+            
+                <div class="offers-container">
+                    <h3>Ofertas Especiales</h3>
+                    <ul>
+                        <li><strong>Lunes y martes:</strong> 10% de descuento en todos los platillos saludables</li>
+                        <li><strong>Miércoles:</strong> ¡Menú infantil gratis con la compra de un plato fuerte!</li>
+                        <li><strong>Viernes:</strong> 2x1 en bebidas seleccionadas de 6:00 pm a 9:00 pm</li>
+                    </ul>
+                </div>
+            </aside>
         </section>
     </main>
-     <!--  estudiante3 main  -->
-    <aside>
-        <h2>Febrero</h2>
-        <!-- Seccion para eventos especiales y promociones -->
-        <div class="events-container" id="events">
-            <h3><strong>Eventos Próximos</strong></h3>
-            <ul>
-                <li><strong><time datetime="2025-02-10">10 de febrero</time></strong>
-                    <p>Noche de música en vivo con artistas locales</p>
-                </li>
-                <li><strong><time datetime="2025-02-14">14 de febrero</time></strong>
-                    <p>Cena especial de San Valentín con menú exclusivo</p>
-                </li>
-            </ul>
-        </div>
     
-        <div class="offers-container">
-            <h3>Ofertas Especiales</h3>
-            <ul>
-                <li><strong>Lunes y martes:</strong> 10% de descuento en todos los platillos saludables</li>
-                <li><strong>Miércoles:</strong> ¡Menú infantil gratis con la compra de un plato fuerte!</li>
-                <li><strong>Viernes:</strong> 2x1 en bebidas seleccionadas de 6:00 pm a 9:00 pm</li>
-            </ul>
-        </div>
-    </aside>
+     <!--  estudiante3 foter  -->
+   
     <footer>
         <!-- div para la ubicacion o dirección del restaurante  -->
         <div class="footer-info">
