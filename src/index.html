@@ -53,7 +53,6 @@
                 
                 <!-- Texto con divs independientes para mejor control de flujo y tamaño -->
                 <div class=" mt-1 md:mt-4 lg:mt-6 lg:w-[80%] " >
-                    <!-- Contenedor con scroll opcional para texto extenso -->
                     <div class="text-xs md:text-xl font-serif text-white  ">
                         <p class="break-words">
                             Ubicado en San Matías, distrito de Ciudad Barrios, El Churrasco es el lugar perfecto para una experiencia gastronómica inigualable. 
@@ -73,7 +72,9 @@
             <h3 class="text-2xl font-bold md:text-4xl p-2 my-2 text-center font-serif">Algunos de nuestros platillos</h3>
             
             <!-- Contenedor con desplazamiento horizontal y snap -->
-            <div id="galery" class="flex flex-row gap-5 overflow-x-auto snap-x ">
+            <div id="galery" class="relative flex flex-row gap-5 overflow-x-auto snap-x scrollbar-custom ">
+                
+
                 <div class="snap-center flex-shrink-0  hover:scale-101 mb-3">
                     <div class="w-[200px] h-[200px] md:w-[350px] md:h-[350px] border-1 border-gray-400 rounded-2xl">
                         <img src="/img/platillo1.jpg" alt="img1" class="w-full h-full object-cover rounded-2xl">
@@ -110,6 +111,14 @@
                     </div>
                     <h4 class="font-bold py-2 my-1 text-center border rounded-xl bg-gray-900 text-white">torta cubana</h4>
                 </div>
+
+                <button class="sticky top-1/2 left-2 -translate-y-1/2 bg-black/50 p-1 rounded-full">
+                    <img src="./../img/left.png" alt="left" class="w-8 h-8">
+                </button>
+            
+                <!-- Botón derecho -->
+                
+                
                 
             </div>
         </section>
@@ -117,10 +126,10 @@
         <!-- seccion para el formulario  -->
         <section class="h-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8 p-2">
             <!-- Columna del formulario con altura ajustable -->
-            <div class="relative col-span-1 overflow-hidden min-h-[450px] sm:min-h-[700px] md:min-h-0 md:h-auto border rounded-2xl border-gray-100" id="Reservar">
+            <div class=" container ml-auto mr-auto flex items-center justify-center relative col-span-1   border rounded-2xl border-gray-100" id="Reservar">
                 <!-- fondito para que la imagen no sea vea distorsionada -->
                 <div class="absolute inset-0 bg-black/30"></div>
-                <img src="https://th.bing.com/th/id/OIP.1Dz298VaNrjT8u7NcRAoAAHaFj?w=626&h=470&rs=1&pid=ImgDetMain" alt="" class="w-full h-full object-cover">
+                <img src="./../img/tablero.jpg" alt="" class="w-full h-full object-cover">
                 
                 <!-- div para Formulario  -->
                  <div class="absolute top-0 left-0 w-full h-auto">
