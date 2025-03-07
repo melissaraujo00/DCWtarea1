@@ -154,34 +154,41 @@
                          </label>
                          
                          <button type="submit" class="w-full py-2 bg-amber-500 text-white rounded-md mt-2 sm:mt-3 hover:bg-amber-400 transition duration-300">Enviar</button>
-                     </form>
-                 </div>
+                     </form>                 </div>
             </div>
         
             <!-- Segunda columna - Eventos y ofertas -->
 
              <!--  estudiante3 aside -->
-            <aside>
-                <h2>Febrero</h2>
+             <aside class="bg-gray-950 w-full h-auto flex flex-col text-white text-end space-y-10">
+                <div class="bg-red-600 w-full p-3 h-auto text-center">
+                    <h2 class="text-5xl md:text-7xl font-poppins font-bold" >04 FEBRERO</h2>
+                </div>
                 <!-- Seccion para eventos especiales y promociones -->
-                <div class="events-container" id="events">
-                    <h3><strong>Eventos Próximos</strong></h3>
-                    <ul>
-                        <li><strong><time datetime="2025-02-10">10 de febrero</time></strong>
+                <div class="events-container mr-5" id="events">
+                    <h3 class="text-2xl md:text-3xl font-bold">📅 Eventos Próximos</h3>
+                    <ul class="text-xl md:text-2xl space-y-7">
+                        <li><time datetime="2025-02-10" class="font-bold">10 de febrero</time>
                             <p>Noche de música en vivo con artistas locales</p>
                         </li>
-                        <li><strong><time datetime="2025-02-14">14 de febrero</time></strong>
+                        <li><time datetime="2025-02-14" class="font-bold">🔥14 de febrero</time>
                             <p>Cena especial de San Valentín con menú exclusivo</p>
                         </li>
                     </ul>
                 </div>
             
-                <div class="offers-container">
-                    <h3>Ofertas Especiales</h3>
-                    <ul>
-                        <li><strong>Lunes y martes:</strong> 10% de descuento en todos los platillos saludables</li>
-                        <li><strong>Miércoles:</strong> ¡Menú infantil gratis con la compra de un plato fuerte!</li>
-                        <li><strong>Viernes:</strong> 2x1 en bebidas seleccionadas de 6:00 pm a 9:00 pm</li>
+                <div class="offers-container mr-5">
+                    <h3 class="text-2xl md:text-3xl font-bold">Ofertas Especiales</h3>
+                    <ul class="text-xl md:text-2xl space-y-7">
+                        <li><p class="font-bold">Lunes y martes</p>
+                            <p>10% de descuento en todos los platillos saludables</p>
+                        </li>
+                        <li ><p class="font-bold">Miércoles</p>
+                            <p>¡Menú infantil gratis con la compra de un plato fuerte!</p>
+                        </li>
+                        <li ><p class="font-bold">Viernes</p>
+                            <p>2x1 en bebidas seleccionadas de 6:00 pm a 9:00 pm</p>
+                        </li>
                     </ul>
                 </div>
             </aside>
@@ -192,38 +199,51 @@
    
     <footer>
         <!-- div para la ubicacion o dirección del restaurante  -->
-        <div class="footer-info">
-            <ul style="list-style: none; padding: 0;">
-                <li><strong>Dirección:</strong><br>
-                    <p>Cantón San Matías, Distrito de Ciudad Barrios, San Miguel Norte</p>
-                </li>
-                <li><strong>Teléfono:</strong><br>
-                    <p>+503 7956 5203</p>
-                </li>
-                <li><strong>Correo electrónico:</strong><br>
-                    <p>elchurrascosv@outlook.com</p>
-                </li>
-            </ul>
-            <div class="footer-info iframe">
-                <!-- iframe que muestra el mapa del restaurante  -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30998.35482681424!2d-88.29983382568355!3d13.791267100000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f64db001f8596fb%3A0x53f539e7e88bea84!2sEl%20Churrasco!5e0!3m2!1ses-419!2ssv!4v1738968992720!5m2!1ses-419!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="footer-info flex flex-wrap w-full h-auto min-w-0">
+            <div class="w-full md:w-1/2 h-auto flex">
+                <ul class="list-none space-y-7 p-5 pl-15">
+                    <li>
+                        <p class="text-2xl md:text-3xl font-bold">Dirección:</p>
+                        <p class="text-xl md:text-2xl">Cantón San Matías, Distrito de Ciudad Barrios</p>
+                        <p class="text-xl md:text-2xl">San Miguel Norte</p>
+                    </li>
+                    <li>
+                        <p class="text-2xl md:text-3xl font-bold">Teléfono:</p>
+                        <p class="text-xl md:text-2xl">+503 7956 5203</p>
+                    </li>
+                    <li>
+                        <p class="text-2xl md:text-3xl font-bold">Correo electrónico:</p>
+                        <p class="text-xl md:text-2xl">elchurrascosv@outlook.com</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer-info iframe w-full md:w-1/2 h-[400px] flex">
+                <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30998.35482681424!2d-88.29983382568355!3d13.791267100000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f64db001f8596fb%3A0x53f539e7e88bea84!2sEl%20Churrasco!5e0!3m2!1ses-419!2ssv!4v1738968992720!5m2!1ses-419!2ssv" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         
+        
         <!-- div del footer que muestra las redes sociales -->
-        <div class="footer-social" id="Contactos">
-            <strong>Síguenos en nuestras redes sociales:</strong>
-            <a href="https://www.facebook.com/people/El-Churrasco/61554004262366/?_rdr">
-                <img src="/img/facebook (1).png" alt="Facebook" width="25" >
-            </a>
-            <a href="https://wa.me/50379565203">
-                <img src="/img/whatsapp.png" alt="WhatsApp" width="25">
-            </a>
+        <div class="footer-social p-3 mt-3 w-full h-auto bg-gray-950 text-white flex flex-col md:flex-row justify-between items-center md:justify-between" id="Contactos">
+            <div class="flex gap-4 mb-4 md:mb-0">
+                <h4 class="font-bold">Síguenos en nuestras redes sociales:</h4>
+                <a href="https://wa.me/50379565203">
+                    <img src="/img/whatsapp.png" alt="WhatsApp" width="25">
+                </a>
+                <a href="https://www.facebook.com/people/El-Churrasco/61554004262366/?_rdr">
+                    <img src="/img/facebook.png" alt="Facebook" width="25">
+                </a>
+            </div>
+        
+            <div class="footer-copy text-center md:text-end"> 
+                <p class="text-xm">Copyright © 2025 El Churrasco Restaurante</p>
+                <p class="text-xm">All rights reserved</p>
+            </div>
         </div>
+        
     
-        <div class="footer-copy">
-            <p><small>Copyright 2025 El Churrasco Restaurante - All rights reserved</small></p>
-        </div>
+        
     </footer>
     
         
