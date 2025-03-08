@@ -17,9 +17,9 @@
                 <nav class="text-white mt-2">
                     <ul class="flex flex-col md:flex-row space-y-2 md:space-y-0 space-x-0 md:space-x-8 justify-center text-xl">
                         <li class="hover:bg-gray-600 p-2"><a href="./index.html">Inicio</a></li>
-                        <li class="hover:bg-gray-600 p-2"><a href="./src/menu.html">Menú</a></li>
-                        <!--<li class="hover:bg-gray-600 p-2"><a href="#Reservar">Reservar</a></li>
-                        <li class="hover:bg-gray-600 p-2"><a href="#Contactos">Contactos</a></li>-->
+                        <li class="hover:bg-gray-600 p-2"><a href="./events.html">Menú</a></li>
+                        <li class="hover:bg-gray-600 p-2"><a href="#Reservar">Reservar</a></li>
+                        <li class="hover:bg-gray-600 p-2"><a href="#Contactos">Contactos</a></li>
                         <li class="hover:bg-gray-600 p-2"><a href="#events">Eventos</a></li>
                     </ul>
                 </nav>
@@ -28,13 +28,12 @@
     </header>
 
     
-    <main >
-
+    <main>
         <h2 class="text-xl md:text-4xl font-serif font-bold text-center p-2 m-2 ">nuestros eventos y promociones</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
-             <!-- Evento 1 -->
-            <aside class="bg-gray-950 w-full h-auto flex flex-col text-white font-serif text-center space-y-8 p-6">
+            <!-- Evento 1 -->
+            <section class="bg-gray-950 w-full h-auto flex flex-col text-white font-serif text-center space-y-8 p-6">
                 <div class="bg-red-600 w-full p-3 h-auto">
                     <h2 class="text-5xl font-poppins font-bold">10 MARZO</h2>
                 </div>
@@ -46,10 +45,12 @@
                     <h3 class="text-xl font-bold">🔥 Oferta del Día</h3>
                     <p class="text-lg">20% de descuento en todos los postres.</p>
                 </div>
-            </aside>
-        
+                <!-- Imagen dentro del section -->
+                <img src="/img/evento-1.jpg" alt="Imagen del evento" class="w-full h-auto mt-4">
+            </section>
+    
             <!-- Evento 15 de marzo -->
-            <aside class="bg-gray-950 w-full h-auto flex flex-col text-white font-serif text-center space-y-8 p-6">
+            <section class="bg-gray-950 w-full h-auto flex flex-col text-white font-serif text-center space-y-8 p-6">
                 <div class="bg-red-600 w-full p-3 h-auto">
                     <h2 class="text-5xl font-poppins font-bold">15 MARZO</h2>
                 </div>
@@ -61,8 +62,12 @@
                     <h3 class="text-xl font-bold">🔥 Oferta del Día</h3>
                     <p class="text-lg">2x1 en café y repostería seleccionada.</p>
                 </div>
-            </aside>
-            <aside class="bg-gray-950 w-full h-auto flex flex-col text-white font-serif text-center space-y-8 p-6">
+                <!-- Imagen dentro del section -->
+                <img src="/img/evento-2.jpg" alt="Imagen del evento" class="w-full h-auto mt-4">
+            </section>
+    
+            <!-- Evento 1 (Repetido) -->
+            <section class="bg-gray-950 w-full h-auto flex flex-col text-white font-serif text-center space-y-8 p-6">
                 <div class="bg-red-600 w-full p-3 h-auto">
                     <h2 class="text-5xl font-poppins font-bold">10 MARZO</h2>
                 </div>
@@ -74,10 +79,12 @@
                     <h3 class="text-xl font-bold">🔥 Oferta del Día</h3>
                     <p class="text-lg">20% de descuento en todos los postres.</p>
                 </div>
-            </aside>
-        
-            <!-- Evento 15 de marzo -->
-            <aside class="bg-gray-950 w-full h-auto flex flex-col text-white font-serif text-center space-y-8 p-6">
+                <!-- Imagen dentro del section -->
+                <img src="/img/evento-3.jpg" alt="Imagen del evento" class="w-full h-auto mt-4">
+            </section>
+    
+            <!-- Evento 15 de marzo (Repetido) -->
+            <section class="bg-gray-950 w-full h-auto flex flex-col text-white font-serif text-center space-y-8 p-6">
                 <div class="bg-red-600 w-full p-3 h-auto">
                     <h2 class="text-5xl font-poppins font-bold">15 MARZO</h2>
                 </div>
@@ -89,66 +96,14 @@
                     <h3 class="text-xl font-bold">🔥 Oferta del Día</h3>
                     <p class="text-lg">2x1 en café y repostería seleccionada.</p>
                 </div>
-            </aside>
-            <aside class="bg-gray-950 w-full h-auto flex flex-col text-white font-serif text-center space-y-8 p-6">
-                <div class="bg-red-600 w-full p-3 h-auto">
-                    <h2 class="text-5xl font-poppins font-bold">10 MARZO</h2>
-                </div>
-                <div class="events-container">
-                    <h3 class="text-xl font-bold">📅 Evento Especial</h3>
-                    <p class="text-lg">Degustación de postres artesanales.</p>
-                </div>
-                <div class="offers-container p-4">
-                    <h3 class="text-xl font-bold">🔥 Oferta del Día</h3>
-                    <p class="text-lg">20% de descuento en todos los postres.</p>
-                </div>
-            </aside>
-        
-            <!-- Evento 15 de marzo -->
-            <aside class="bg-gray-950 w-full h-auto flex flex-col text-white font-serif text-center space-y-8 p-6">
-                <div class="bg-red-600 w-full p-3 h-auto">
-                    <h2 class="text-5xl font-poppins font-bold">15 MARZO</h2>
-                </div>
-                <div class="events-container">
-                    <h3 class="text-xl font-bold">📅 Evento Especial</h3>
-                    <p class="text-lg">Tarde de café y lectura con autores locales.</p>
-                </div>
-                <div class="offers-container p-4">
-                    <h3 class="text-xl font-bold">🔥 Oferta del Día</h3>
-                    <p class="text-lg">2x1 en café y repostería seleccionada.</p>
-                </div>
-            </aside>
-            <aside class="bg-gray-950 w-full h-auto flex flex-col text-white font-serif text-center space-y-8 p-6">
-                <div class="bg-red-600 w-full p-3 h-auto">
-                    <h2 class="text-5xl font-poppins font-bold">10 MARZO</h2>
-                </div>
-                <div class="events-container">
-                    <h3 class="text-xl font-bold">📅 Evento Especial</h3>
-                    <p class="text-lg">Degustación de postres artesanales.</p>
-                </div>
-                <div class="offers-container p-4">
-                    <h3 class="text-xl font-bold">🔥 Oferta del Día</h3>
-                    <p class="text-lg">20% de descuento en todos los postres.</p>
-                </div>
-            </aside>
-        
-            <!-- Evento 15 de marzo -->
-            <aside class="bg-gray-950 w-full h-auto flex flex-col text-white font-serif text-center space-y-8 p-6">
-                <div class="bg-red-600 w-full p-3 h-auto">
-                    <h2 class="text-5xl font-poppins font-bold">15 MARZO</h2>
-                </div>
-                <div class="events-container">
-                    <h3 class="text-xl font-bold">📅 Evento Especial</h3>
-                    <p class="text-lg">Tarde de café y lectura con autores locales.</p>
-                </div>
-                <div class="offers-container p-4">
-                    <h3 class="text-xl font-bold">🔥 Oferta del Día</h3>
-                    <p class="text-lg">2x1 en café y repostería seleccionada.</p>
-                </div>
-            </aside>
+                <!-- Imagen dentro del section -->
+                <img src="/img/evento-4.jpg" alt="Imagen del evento" class="w-full h-auto mt-4">
+            </section>
+    
+            <!-- Repite para los demás eventos si es necesario -->
         </div>
-        
     </main>
+    
     <footer>
         <!-- div para la ubicacion o dirección del restaurante  -->
         
