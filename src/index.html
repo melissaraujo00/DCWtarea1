@@ -37,23 +37,25 @@
     <!--  estudiante2 main  -->
     <main>
 
-        <section class="relative w-full h-auto border  border-gray-300  shadow-md">
+        <section class="relative w-full h-auto border border-gray-300 shadow-md">
             <div class="relative w-full h-auto">
+                <!-- Fondo oscuro para la imagen -->
                 <div class="absolute inset-0 bg-gray-950/65"></div>
-                <img src="./../img/imagenNegocio.jpeg" alt="" class="w-full h-[270px] md:h-[370px] lg:h-[399px] object-cover">
+                <!-- Imagen responsiva con altura ajustable para pantallas pequeñas -->
+                <img src="./../img/imagenNegocio.jpeg" alt="Imagen negocio" class="w-full min-h-[390px] sm:h-[270px] md:h-[370px] lg:h-[399px] object-cover">
             </div>
-            
-            <!-- Contenedor principal con mejor control de espaciado y ancho -->
-            <div class="absolute inset-0 p-2 sm:p-2 md:p-5 flex flex-col justify-start overflow-hidden">
-                <div class=" p-1 rounded-md w-fit max-w-[70%] sm:max-w-md">
-                    <h2 class="text-xl sm:text-2xl md:text-3xl  font-serif break-words text-white font-bold">
-                        "Sabor, frescura y momentos inolvidables"
+        
+            <!-- Contenedor principal -->
+            <div class="absolute inset-0 p-2 sm:p-4 md:p-5 flex flex-col justify-start overflow-hidden">
+                <div class="p-1 rounded-md">
+                    <h2 class="sm:text-3xl md:text-5xl text-lg font-serif text-white font-bold">
+                        "Sabor, frescura y <br>momentos inolvidables"
                     </h2>
                 </div>
-                
-                <!-- Texto con divs independientes para mejor control de flujo y tamaño -->
-                <div class=" mt-1 md:mt-4 lg:mt-6 lg:w-[80%] " >
-                    <div class="text-xs md:text-xl font-serif text-white  ">
+        
+                <!-- Descripción del negocio -->
+                <div class="mt-1 md:mt-4 lg:mt-6 lg:w-[80%]">
+                    <div class="text-2xs sm:text-base md:text-xl font-serif text-white">
                         <p class="break-words">
                             Ubicado en San Matías, distrito de Ciudad Barrios, El Churrasco es el lugar perfecto para una experiencia gastronómica inigualable. 
                             Ofrecemos una amplia variedad de opciones para todos los gustos, desde comidas tradicionales hasta opciones saludables y un menú especial para los más pequeños.
@@ -66,6 +68,9 @@
                 </div>
             </div>
         </section>
+        
+        
+        
 
         <!-- seccion para la galeria de imagenes -->
         <section class="my-2 px-2">
@@ -112,13 +117,18 @@
                     <h4 class="font-bold py-2 my-1 text-center border rounded-xl bg-gray-900 text-white">torta cubana</h4>
                 </div>
 
-                <button class=" top-1/2 left-2 -translate-y-1/2 bg-black/50 p-1 rounded-full">
-                    <img src="./../img/left.png" alt="left" class="w-8 h-8">
-                </button>
             
-                <!-- Botón derecho -->
-                
-                
+                <div class="absolute top-1/2 left-0 w-full px-6 flex justify-between -translate-y-1/2 z-10">
+                    <!-- Botón izquierdo -->
+                    <button class="bg-white p-2 rounded-full shadow-md hover:bg-gray-300 transition sm:p-3">
+                        <img src="/img/flecha-izquierda.png" alt="" class="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8">
+                    </button>
+                    
+                    <!-- Botón derecho -->
+                    <button class="bg-white p-2 rounded-full shadow-md hover:bg-gray-300 transition sm:p-3">
+                        <img src="/img/flecha-derecha.png" alt="" class="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8">
+                    </button>
+                </div>
                 
             </div>
         </section>
@@ -129,13 +139,13 @@
             <div class=" container ml-auto mr-auto flex items-center justify-center relative col-span-1   border rounded-2xl border-gray-100" id="Reservar">
                 <!-- fondito para que la imagen no sea vea distorsionada -->
                 <div class="absolute inset-0 bg-black/30"></div>
-                <img src="./../img/tablero.jpg" alt="" class="w-full h-full object-cover">
+                <img src="./../img/fondo madera.jfif" alt="" class="w-full min-h-[460px] sm:h-[300px] md:h-[750px] lg:h-[600px] object-cover ">
                 
                 <!-- div para Formulario  -->
-                    <div class="absolute top-0 left-0 w-full h-auto flex items-center justify-center">
+                    <div class="absolute top-0 left-0 w-full h-auto flex items-center justify-center p-4">
 
                      <form action="post" class=" flex flex-col items-left p-4 sm:p-2 md:text-lg font-bold rounded-md  max-w-md mx-auto text-white">
-                         <h2 class="text-center mb-3 text-xl sm:text-2xl">¡Reserva Aquí!</h2>
+                         <h2 class="text-center mb-3 text-xl sm:text-4xl">¡Reserva Aquí!</h2>
                         
                          <label for="nombre" class="block mb-1">Nombre:
                              <input type="text" id="nombre" name="nombre" class="w-full p-1 sm:p-2 border bg-white border-gray-300 rounded-md mb-2 sm:mb-3 text-black font-normal">
@@ -153,7 +163,7 @@
                              <input type="number" id="persona" name="persona" class="w-full p-1 sm:p-2 border bg-white border-gray-300 rounded-md mb-2 sm:mb-3 text-black font-normal">
                          </label>
                          
-                         <button type="submit" class="w-full py-2 bg-amber-500 text-white rounded-md mt-2 sm:mt-3 hover:bg-amber-400 transition duration-300">Enviar</button>
+                         <button type="submit" class="w-full py-2 bg-red-600 text-white rounded-md mt-2 sm:mt-3 hover:bg-amber-400 transition duration-300">Enviar</button>
                      </form>                 
                     </div>
             </div>
@@ -161,14 +171,14 @@
             <!-- Segunda columna - Eventos y ofertas -->
 
              <!--  estudiante3 aside -->
-             <aside class="bg-gray-950 w-full h-auto flex flex-col text-white text-end space-y-10">
+             <aside class="bg-gray-950 w-full h-auto flex flex-col text-white text-end space-y-8">
                 <div class="bg-red-600 w-full p-3 h-auto text-center">
-                    <h2 class="text-5xl md:text-7xl font-poppins font-bold" >04 FEBRERO</h2>
+                    <h2 class="text-5xl md:text-5xl font-poppins font-bold" >08 MARZO</h2>
                 </div>
                 <!-- Seccion para eventos especiales y promociones -->
                 <div class="events-container mr-5" id="events">
-                    <h3 class="text-2xl md:text-3xl font-bold">📅 Eventos Próximos</h3>
-                    <ul class="text-xl md:text-2xl space-y-7">
+                    <h3 class="text-xl md:text-lg font-bold">📅 Eventos Próximos</h3>
+                    <ul class="text-lg md:text-xl space-y-7">
                         <li><time datetime="2025-02-10" class="font-bold">10 de febrero</time>
                             <p>Noche de música en vivo con artistas locales</p>
                         </li>
@@ -178,9 +188,9 @@
                     </ul>
                 </div>
             
-                <div class="offers-container mr-5">
-                    <h3 class="text-2xl md:text-3xl font-bold">Ofertas Especiales</h3>
-                    <ul class="text-xl md:text-2xl space-y-7">
+                <div class="offers-container mr-5 p-4">
+                    <h3 class="text-xl md:text-lg font-bold">Ofertas Especiales</h3>
+                    <ul class="text-lg md:text-xl space-y-7">
                         <li><p class="font-bold">Lunes y martes</p>
                             <p>10% de descuento en todos los platillos saludables</p>
                         </li>
