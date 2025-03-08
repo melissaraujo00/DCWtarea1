@@ -7,7 +7,7 @@
   <title>Menú con Tailwind CSS</title>
   <link href="./output.css" rel="stylesheet">
 </head>
-<body class="min-w-[400px] max-w-auto">
+<body>
     <header>
         <div class="bg-gray-950 p-3 font-serif flex items-center relative">
             <img class="w-24 md:w-34" src="/img/logochurrasco.png" alt="logochurrasco" >
@@ -28,66 +28,112 @@
         </div>
     </header>
 
-    <main class="p-6">
-        <section class="my-6">
-            <h2 class="text-3xl font-bold text-center mb-4">MENÚ</h2>
-            <div class="grid grid-cols-4 gap-6">
-                <!-- Card 1 -->
-                <div class="snap-center flex-shrink-0 hover:scale-105 mb-3 bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div class="w-[200px] h-[200px] md:w-[350px] md:h-[350px] border-1 border-gray-400 rounded-2xl">
-                        <img src="/img/platillo1.jpg" alt="Mexicano Mixto" class="w-full h-full object-cover rounded-2xl">
+    <main class="flex flex-col items-center justify-center flex-grow p-6 bg-gray-100">
+        <section class="py-12 bg-gray-100">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">MENÚ</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-2 max-w-7xl mx-auto">
+    
+                <!-- Entraditas -->
+                <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition hover:scale-110">
+                    <img class="w-full h-72 object-cover" src="/img/medio-nacho.jpg" alt="Entraditas">
+                    <div class="absolute inset-0 bg-stone-900/50">
+                        <div class="absolute bottom-0 p-6 text-white">
+                            <h3 class="text-2xl font-semibold">Entraditas</h3>
+                            <p class="mt-2 text-lg">Medio Nacho $3.00</p>
+                            <p class="mt-2 text-lg">Media Sopa $3.00</p>
+                            <p class="mt-2 text-lg">Mulitas $3.00</p>
+                        </div>
                     </div>
-                    <h4 class="font-bold py-2 my-1 text-center border rounded-xl bg-gray-900 text-white">Mexicano Mixto</h4>
                 </div>
     
-                <!-- Card 2 -->
-                <div class="snap-center flex-shrink-0 hover:scale-105 mb-3 bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div class="w-[200px] h-[200px] md:w-[350px] md:h-[350px] border-1 border-gray-400 rounded-2xl">
-                        <img src="/img/platillo2.jpg" alt="Burrito" class="w-full h-full object-cover rounded-2xl">
+                <!-- Tacos -->
+                <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition hover:scale-110">
+                    <img class="w-full h-72 object-cover" src="/img/tacos.jpg" alt="Tacos">
+                    <div class="absolute inset-0 bg-stone-900/50">
+                        <div class="absolute bottom-0 p-6 text-white">
+                            <h3 class="text-2xl font-semibold">TACOS</h3>
+                            <p class="mt-2 text-lg">Tacos de Res $4.50</p>
+                            <p class="mt-2 text-lg">Tacos de Pollo $4.50</p>
+                            <p class="mt-2 text-lg">Tacos al Pastor $4.50</p>
+                            <p class="mt-2 text-lg">Tacos de Lengua $5.50 (Acompañados de chirimol o cebolla con cilantro)</p>
+                        </div>
                     </div>
-                    <h4 class="font-bold py-2 my-1 text-center border rounded-xl bg-gray-900 text-white">Burrito</h4>
                 </div>
     
-                <!-- Card 3 -->
-                <div class="snap-center flex-shrink-0 hover:scale-105 mb-3 bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div class="w-[200px] h-[200px] md:w-[350px] md:h-[350px] border-1 border-gray-400 rounded-2xl">
-                        <img src="/img/platillo3.jpg" alt="Tacos de Pollito" class="w-full h-full object-cover rounded-2xl">
+                <!-- Burritos -->
+                <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition hover:scale-110">
+                    <img class="w-full h-72 object-cover" src="/img/burritos.jpg" alt="Burritos">
+                    <div class="absolute inset-0 bg-stone-900/50">
+                        <div class="absolute bottom-0 p-6 text-white">
+                            <h3 class="text-2xl font-semibold">BURRITOS</h3>
+                            <p class="mt-2 text-lg">Burrito de Res $6.50</p>
+                            <p class="mt-2 text-lg">Burrito de Pollo $6.50</p>
+                            <p class="mt-2 text-lg">Burrito Mixto $6.85</p>
+                            <p class="mt-2 text-lg">(Frijoles molidos, aguacate, quesillo, chirimol, y una costra de queso mix acompañado de pasta de aguacate)</p>
+                        </div>
                     </div>
-                    <h4 class="font-bold py-2 my-1 text-center border rounded-xl bg-gray-900 text-white">Tacos de Pollito</h4>
                 </div>
     
-                <!-- Card 4 -->
-                <div class="snap-center flex-shrink-0 hover:scale-105 mb-3 bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div class="w-[200px] h-[200px] md:w-[350px] md:h-[350px] border-1 border-gray-400 rounded-2xl">
-                        <img src="/img/chaomin.jpg" alt="Chaomin" class="w-full h-full object-cover rounded-2xl">
+                <!-- Big Burro -->
+                <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition hover:scale-110">
+                    <img class="w-full h-72 object-cover" src="/img/burritos.jpg" alt="Big Burro">
+                    <div class="absolute inset-0 bg-stone-900/50">
+                        <div class="absolute bottom-0 p-6 text-white">
+                            <h3 class="text-2xl font-semibold">BIG BURRO</h3>
+                            <p class="mt-2 text-lg">Big Burro de Res $5.50</p>
+                            <p class="mt-2 text-lg">Big Burro de Pollo $5.50</p>
+                            <p class="mt-2 text-lg">Big Burro Mixto $5.85</p>
+                            <p class="mt-2 text-lg">(Quesillo, arroz, frijoles charros, aguacate, salsa de tomate)</p>
+                        </div>
                     </div>
-                    <h4 class="font-bold py-2 my-1 text-center border rounded-xl bg-gray-900 text-white">Chaomin</h4>
                 </div>
     
-                <!-- Card 5 -->
-                <div class="snap-center flex-shrink-0 hover:scale-105 mb-3 bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div class="w-[200px] h-[200px] md:w-[350px] md:h-[350px] border-1 border-gray-400 rounded-2xl">
-                        <img src="/img/salteado.jpg" alt="Salteado de Verduras" class="w-full h-full object-cover rounded-2xl">
+                <!-- Fajitas -->
+                <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition hover:scale-110">
+                    <img class="w-full h-72 object-cover" src="/img/fajitas.jpg" alt="Fajitas">
+                    <div class="absolute inset-0 bg-stone-900/50">
+                        <div class="absolute bottom-0 p-6 text-white">
+                            <h3 class="text-2xl font-semibold">FAJITAS</h3>
+                            <p class="mt-2 text-lg">Fajitas de Res $6.00</p>
+                            <p class="mt-2 text-lg">Fajitas de Pollo $6.00</p>
+                            <p class="mt-2 text-lg">Fajitas Mixtas $6.50</p>
+                            <p class="mt-2 text-lg">(Pimiento verde, pimiento rojo, cebolla, cilantro, chirimol y 6 tortillas de tacos)</p>
+                        </div>
                     </div>
-                    <h4 class="font-bold py-2 my-1 text-center border rounded-xl bg-gray-900 text-white">Salteado de Verduras</h4>
                 </div>
     
-                <!-- Card 6 -->
-                <div class="snap-center flex-shrink-0 hover:scale-105 mb-3 bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div class="w-[200px] h-[200px] md:w-[350px] md:h-[350px] border-1 border-gray-400 rounded-2xl">
-                        <img src="/img/platillo6.jpg" alt="Torta Cubana" class="w-full h-full object-cover rounded-2xl">
+                <!-- Fajitas Especial -->
+                <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition hover:scale-110">
+                    <img class="w-full h-72 object-cover" src="/img/fajitas.jpg" alt="Fajitas Especial">
+                    <div class="absolute inset-0 bg-stone-900/50">
+                        <div class="absolute bottom-0 p-6 text-white">
+                            <h3 class="text-2xl font-semibold">FAJITA ESPECIAL</h3>
+                            <p class="mt-2 text-lg">Fajitas especial de Res $8.85</p>
+                            <p class="mt-2 text-lg">Fajitas especial de Pollo $8.85</p>
+                            <p class="mt-2 text-lg">Fajitas especial Mixtas $8.85</p>
+                            <p class="mt-2 text-lg">(Pimiento verde, pimiento amarillo, cebolla, arroz, frijoles molidos, chirimol, y 6 tortillas de tacos)</p>
+                        </div>
                     </div>
-                    <h4 class="font-bold py-2 my-1 text-center border rounded-xl bg-gray-900 text-white">Torta Cubana</h4>
                 </div>
+    
+                <!-- Alambres -->
+                <div class="relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition hover:scale-110">
+                    <img class="w-full h-72 object-cover" src="/img/alambre.jpg" alt="Alambres">
+                    <div class="absolute inset-0 bg-stone-900/50">
+                        <div class="absolute bottom-0 p-6 text-white">
+                            <h3 class="text-2xl font-semibold">ALAMBRES</h3>
+                            <p class="mt-2 text-lg">Alambre de Res $7.95</p>
+                            <p class="mt-2 text-lg">Alambre de Pollo $7.95</p>
+                            <p class="mt-2 text-lg">Alambre Mixto $7.95</p>
+                            <p class="mt-2 text-lg">(Tocino, chile rojo, chile verde, cebolla, quesillo, cilantro, queso mozzarella, pasta de aguacate, chirimol y 6 tortillas de tacos)</p>
+                        </div>
+                    </div>
+                </div>
+    
             </div>
         </section>
     </main>
     
-    
-    
-    
-    
-
     
 
 
